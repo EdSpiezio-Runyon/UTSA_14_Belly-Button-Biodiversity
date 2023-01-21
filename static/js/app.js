@@ -46,11 +46,11 @@ function buildMetadata(ID) {
 
         // Create the gauge chart
         // Define variable for washing frequency
-        var washFrequency = filteredMetadata.wfreq;
+        var washFrequency = result.wfreq;
 
         // Create trace
         var gauge_data = [{
-               domain: { x: [0, 1], y: [0,1] },
+                domain: { x: [0, 1], y: [0,1] },
                 value: washFrequency,
                 title: { text: "Washing Frequency (No. of Times per Week)" },
                 type: "indicator",
